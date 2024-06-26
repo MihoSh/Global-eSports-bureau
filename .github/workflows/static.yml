@@ -1,0 +1,25 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Tournaments from './components/Tournaments';
+import News from './components/News';
+import HostTournament from './components/HostTournament';
+import Lineup from './components/Lineup';
+import OldTournaments from './components/OldTournaments';
+import Contact from './components/Contact';
+import Collaborate from './components/Collaborate';
+import Account from './components/Account';
+
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/tournaments" component={Tournaments} />
+                <Route path="/news" component={News} />
+                <Route path="/host" component={HostTournament} />
+                <Route path
